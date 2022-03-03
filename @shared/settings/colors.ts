@@ -9,7 +9,14 @@ const colors = {
   },
   grays: {
     concrete: '#F2F2F2',
+    gray: '#808080',
     mineShaft: '#333',
+  },
+  reds: {
+    guardsmanRed: '#cc0000',
+    _RGB: {
+      guardsmanRed: '204,0,0',
+    },
   },
 };
 

@@ -7,3 +7,5 @@ export {
   createGlobalStyle,
   keyframes,
 } from 'styled-components';
+
+export { default as Link } from 'next/link'
