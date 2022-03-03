@@ -48,11 +48,6 @@ const HeaderGrid = styled(Grid)<IGridProps & IProps>`
   * {
     color: ${({ color }: { color?: string }) => color || colors.grays.gray};
   }
-
-  ${Logo} {
-    max-width: 100px;
-    height: 60px;
-  }
 `;
 
 export type IHeaderProps = IProps;

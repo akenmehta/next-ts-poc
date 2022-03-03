@@ -48,20 +48,23 @@ const LogoContainer: FC<IProps> = (props) => {
 
 const Logo = styled(LogoContainer)`
   display: inline-block;
+
   a {
     display: block;
   }
+
   svg {
     position: relative;
     display: inherit;
     width: 100%;
     height: 100%;
   }
+
   img {
     position: relative;
     display: inherit;
-    width: 100%;
-    height: auto;
+    max-width: 100px;
+    height: 60px;
   }
 `;
 
