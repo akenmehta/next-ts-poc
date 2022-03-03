@@ -1,8 +1,5 @@
-import React from "react";
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import { React, Head } from "@shared/vendor";
+import { NextPage } from "@shared/vendorTypes";
 
 const Home: NextPage = () => {
   return (
@@ -17,19 +14,6 @@ const Home: NextPage = () => {
         <h1>Home Page</h1>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, iure adipisci magnam expedita soluta vitae fuga ab mollitia praesentium dolorem cumque molestias libero quaerat ad omnis in voluptates porro aliquid?</p>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
     </div>
   )
 }

@@ -1,5 +1,6 @@
 import { React, styled, Link } from '@shared/vendor';
 import { FC } from '@shared/vendorTypes';
+import { colors } from "@shared/settings/colors";
 import { ISvgProps, Svg } from './Svg';
 import { Text } from "./Text";
 
@@ -64,7 +65,13 @@ const Logo = styled(LogoContainer)`
     position: relative;
     display: inherit;
     max-width: 100px;
-    height: 60px;
+    height: 50px;
+    margin-right: 12px;
+  }
+
+  h2 {
+    margin-bottom: 0;
+    color: ${colors.neutrals.black};
   }
 `;
 

@@ -3,9 +3,10 @@ import { React, styled } from '@shared/vendor';
 import { FC } from '@shared/vendorTypes';
 
 import { colors } from '@shared/settings/colors';
+import { fontSizes, fontWeights } from '@shared/settings/fonts';
 
 import { IGridProps, Grid } from '../container';
-import { Logo } from "@shared/components/presentational";
+import { Logo, Title } from "@shared/components/presentational";
 
 interface IProps {
   backgroundColor?: string; // *  set the background color of the Header component
@@ -28,7 +29,9 @@ const HeaderContainer: FC<IProps> = props => {
             src: '/favicon.png',
             altText: 'logo',
           }}
-        />
+        >
+          <Title type="h2">Definitive</Title>
+        </Logo>
       </HeaderGrid>
     </header>
   );
@@ -43,7 +46,7 @@ const Header = styled(HeaderContainer)<IProps>`
 const HeaderGrid = styled(Grid)<IGridProps & IProps>`
   display: flex;
   align-items: center;
-  padding: 15px 0;
+  padding: 10px 0;
 
   * {
     color: ${({ color }: { color?: string }) => color || colors.grays.gray};
