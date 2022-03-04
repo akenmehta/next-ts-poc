@@ -46,7 +46,7 @@ const Header = styled(HeaderContainer)<IProps>`
 const HeaderGrid = styled(Grid)<IGridProps & IProps>`
   display: flex;
   align-items: center;
-  padding: 10px 0;
+  padding: 10px 15px;
 
   * {
     color: ${({ color }: { color?: string }) => color || colors.grays.gray};

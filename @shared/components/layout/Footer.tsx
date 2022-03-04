@@ -18,7 +18,7 @@ const Footer: FC<unknown> = () => {
 const FooterWrapper = styled.footer`
   color: ${colors.grays.gray};
   background-color: ${colors.neutrals.white};
-  padding: 20px;
+  padding: 20px 0;
 `;
 
 export { Footer };

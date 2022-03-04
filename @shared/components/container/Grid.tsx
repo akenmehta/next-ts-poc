@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 export interface IGridProps {
   maxWidth?: string; // * default = 1200px
+  hasDefaultPadding?: boolean; // * default = true
 }
 
 const Grid = styled.div<IGridProps>`
@@ -15,5 +16,6 @@ const Grid = styled.div<IGridProps>`
     display: table;
     clear: both;
   }
+  ${({ hasDefaultPadding = true }) => hasDefaultPadding && `padding: 0 15px;`}
 `;
 export { Grid };

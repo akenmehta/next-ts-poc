@@ -48,7 +48,8 @@ const LogoContainer: FC<IProps> = (props) => {
 };
 
 const Logo = styled(LogoContainer)`
-  display: inline-block;
+  display: flex;
+  align-items: center;
 
   a {
     display: block;
