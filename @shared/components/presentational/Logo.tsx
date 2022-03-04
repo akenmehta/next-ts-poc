@@ -1,4 +1,4 @@
-import { React, styled, Link } from '@shared/vendor';
+import { React, styled, Link, Image } from '@shared/vendor';
 import { FC } from '@shared/vendorTypes';
 import { colors } from "@shared/settings/colors";
 import { ISvgProps, Svg } from './Svg';
@@ -26,7 +26,6 @@ const LogoContainer: FC<IProps> = (props) => {
     children,
   } = props;
 
-  /* !TODO add dev env specific implementation  */
   if (image && svgProps) {
     console.error(
       'ERROR: Logo expects either and image or svg icon, not both.'
@@ -34,16 +33,14 @@ const LogoContainer: FC<IProps> = (props) => {
   }
 
   return (
-    <span {...{ className }}>
-      <Link href={href}>
-        <>
-          {srText && <Text srText={srText} />}
-          {svgProps && <Svg {...svgProps} />}
-          {image && <img src={image.src} alt={image.altText} />}
-          {children}
-        </>
-      </Link>
-    </span>
+    <Link href={href}>
+      <span {...{ className }}>
+        {srText && <Text srText={srText} />}
+        {svgProps && <Svg {...svgProps} />}
+        {image && <Image src={image.src} width={45} height={45} alt={image.altText} />}
+        {children}
+      </span>
+    </Link>
   );
 };
 
@@ -62,16 +59,9 @@ const Logo = styled(LogoContainer)`
     height: 100%;
   }
 
-  img {
-    position: relative;
-    display: inherit;
-    max-width: 100px;
-    height: 50px;
-    margin-right: 12px;
-  }
-
   h2 {
     margin-bottom: 0;
+    margin-left: 12px;
     color: ${colors.neutrals.black};
   }
 `;
