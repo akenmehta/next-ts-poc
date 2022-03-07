@@ -6,7 +6,7 @@ import { colors } from '@shared/settings/colors';
 import { fontSizes, fontWeights } from '@shared/settings/fonts';
 
 import { IGridProps, Grid } from '../container';
-import { Logo, Title } from "@shared/components/presentational";
+import { Logo, Title } from '@shared/components/presentational';
 
 interface IProps {
   backgroundColor?: string; // *  set the background color of the Header component
@@ -15,10 +15,8 @@ interface IProps {
   gridProps?: IGridProps;
 }
 
-const HeaderContainer: FC<IProps> = props => {
-  const {
-    className,
-  } = props;
+const HeaderContainer: FC<IProps> = (props) => {
+  const { className } = props;
 
   return (
     <header {...{ className }}>
@@ -39,8 +37,7 @@ const HeaderContainer: FC<IProps> = props => {
 
 const Header = styled(HeaderContainer)<IProps>`
   position: relative;
-  background: ${({ backgroundColor }: { backgroundColor?: string}) =>
-    backgroundColor || colors.neutrals.white};
+  background: ${({ backgroundColor }: { backgroundColor?: string }) => backgroundColor || colors.neutrals.white};
 `;
 
 const HeaderGrid = styled(Grid)<IGridProps & IProps>`

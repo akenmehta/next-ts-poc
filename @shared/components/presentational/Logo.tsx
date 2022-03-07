@@ -1,8 +1,8 @@
 import { React, styled, Link, Image } from '@shared/vendor';
 import { FC } from '@shared/vendorTypes';
-import { colors } from "@shared/settings/colors";
+import { colors } from '@shared/settings/colors';
 import { ISvgProps, Svg } from './Svg';
-import { Text } from "./Text";
+import { Text } from './Text';
 
 interface IProps {
   className?: string;
@@ -17,19 +17,10 @@ interface IProps {
 }
 
 const LogoContainer: FC<IProps> = (props) => {
-  const {
-    className,
-    srText,
-    svgProps,
-    href,
-    image,
-    children,
-  } = props;
+  const { className, srText, svgProps, href, image, children } = props;
 
   if (image && svgProps) {
-    console.error(
-      'ERROR: Logo expects either and image or svg icon, not both.'
-    );
+    console.error('ERROR: Logo expects either and image or svg icon, not both.');
   }
 
   return (

@@ -1,8 +1,8 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app';
+import { React } from '@shared/vendor';
+import { AppProps } from '@shared/vendorTypes';
 import { Grid } from '@shared/components/container';
 import { Header, Footer } from '@shared/components/layout';
-import { AppStyles } from "@styles/appStyles";
+import { AppStyles } from '@styles/appStyles';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -17,4 +17,4 @@ function MyApp({ Component, pageProps }: AppProps) {
   );
 }
 
-export default MyApp
+export default MyApp;

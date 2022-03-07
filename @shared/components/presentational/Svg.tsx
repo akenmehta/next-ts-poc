@@ -4,7 +4,6 @@ import { FC } from '@shared/vendorTypes';
 
 import { colors } from '@shared/settings/colors';
 
-
 interface IProps {
   icon: string;
   className?: string;
@@ -18,9 +17,7 @@ interface IProps {
 const SvgContainer: FC<IProps> = (props) => {
   const { icon, className } = props;
 
-  return (
-    <span {...{ className }}>{icon}</span>
-  );
+  return <span {...{ className }}>{icon}</span>;
 };
 
 const Svg = styled(SvgContainer)<IProps>`
@@ -46,9 +43,7 @@ const Svg = styled(SvgContainer)<IProps>`
     };
     return `
         width: ${getDimensions(width) || '40px'};
-        height: ${
-          getDimensions(height) || getDimensions(width) || '40px'
-        };             
+        height: ${getDimensions(height) || getDimensions(width) || '40px'};             
     `;
   }}
 

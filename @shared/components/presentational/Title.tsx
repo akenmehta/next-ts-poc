@@ -37,4 +37,4 @@ const Title = styled(TitleContainer)<IProps>`
 `;
 
 export type { TitleType, IProps as ITitleProps };
-export { Title};
+export { Title };

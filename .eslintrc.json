@@ -47,7 +47,8 @@
     // Airbnb prefers forEach
     "unicorn/no-array-for-each": "off",
     // It's not accurate in the monorepo style
-    "import/no-extraneous-dependencies": "off"
+    "import/no-extraneous-dependencies": "off",
+    "react/jsx-props-no-spreading": "off"
   },
   "settings": {
     "import/parsers": {
@@ -57,21 +58,9 @@
       ]
     },
     "import/resolver": {
-      "alias": {
-        "map": [
-          [
-            "@components",
-            "../../../components/"
-          ]
-        ],
-        "extensions": [
-          ".js",
-          ".jsx"
-        ]
-      },
       "typescript": {
         "alwaysTryTypes": true,
-        "project": "."
+        "project": "./tsconfig.json"
       }
     }
   }

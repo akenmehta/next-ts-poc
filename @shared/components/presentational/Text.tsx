@@ -19,11 +19,7 @@ const TextContainer: FC<IProps> = (props) => {
       <span {...rest}>
         <ScreenReaderText aria-hidden="false">{srText}</ScreenReaderText>
         {children && (
-          <span
-            aria-hidden="true"
-            tabIndex={-1}
-            className={className}
-            role="presentation">
+          <span aria-hidden="true" tabIndex={-1} className={className} role="presentation">
             {children}
           </span>
         )}

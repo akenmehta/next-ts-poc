@@ -1,5 +1,5 @@
-import { Title } from "../Title";
-import { render } from "@testing-library/react";
+import { Title } from '../Title';
+import { render } from '@testing-library/react';
 
 test('renders a message', () => {
   const { getByText } = render(<Title type="h1">Hello World</Title>);

@@ -6,11 +6,7 @@ import { Grid } from '@shared/components/container';
 const Footer: FC<unknown> = () => {
   return (
     <FooterWrapper>
-      <Grid>
-        &copy;{' '}
-        {new Date().getFullYear()}{' '}
-        Definitive Inc. All rights reserved.
-      </Grid>
+      <Grid>&copy; {new Date().getFullYear()} Definitive Inc. All rights reserved.</Grid>
     </FooterWrapper>
   );
 };
