@@ -1,9 +1,6 @@
 name: CI - Develop
 
-on:
-    push:
-        branches:
-            - develop
+on: [push]
 
 jobs:
   standard-checks:
