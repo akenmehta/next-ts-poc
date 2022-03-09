@@ -1,5 +1,5 @@
 // * React core
-export { createContext, default as React } from 'react';
+export { createContext, default as React, useEffect, useState, useRef } from 'react';
 
 // * CSS in JS
 export {
